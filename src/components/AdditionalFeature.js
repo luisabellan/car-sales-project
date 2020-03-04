@@ -4,8 +4,8 @@ import { addFeature } from '../actions'
 
 const AdditionalFeature = props => {
 console.log(props)
-  const addFeature = e => {
-    e.preventDefault()
+  const addFeature = feature => {
+   // e.preventDefault()
     props.addFeature(props.feature)
   }
 
@@ -13,7 +13,7 @@ console.log(props)
     <li>
       {/* Add an onClick that will let you add a feature to your car */}
       <button
-         onClick={() => addFeature}   
+         onClick={() => addFeature(props.feature)}   
         className="button"
       >
         Add
@@ -24,7 +24,8 @@ console.log(props)
 
 const mapStateToProps = state => {
   return {
-    features: state.features
+    
+    
   };
 };
 export default connect(mapStateToProps, {addFeature})(AdditionalFeature);
