@@ -38,7 +38,7 @@ const App = () => {
   };
 
   const buyItem = item => {
-    // dipsatch an action here to add an item
+    // dispatch an action here to add an item
   };
 
   return (
