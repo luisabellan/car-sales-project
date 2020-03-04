@@ -33,7 +33,7 @@ const App = () => {
 
   const store = createStore(state)
 
-  const removeFeature = item => {
+  const removeFeature = feature => {
     // dispatch an action here to remove an item
   };
 
