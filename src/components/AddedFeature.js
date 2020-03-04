@@ -13,7 +13,6 @@ const AddedFeature = props => {
 
 const mapStateToProps = state => {
   return {
-    additionalFeatures: state.additionalFeatures,
     feature: state.feature
   };
 };
