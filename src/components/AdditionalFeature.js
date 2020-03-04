@@ -24,8 +24,15 @@ console.log(props)
 
 const mapStateToProps = state => {
   return {
+    /* TODO fix this */
+    
+   /*  features: [...state.features, state.feature]
+ */
     
     
   };
 };
-export default connect(mapStateToProps, {addFeature})(AdditionalFeature);
+export default connect(
+  mapStateToProps,
+   {addFeature}
+   )(AdditionalFeature);
