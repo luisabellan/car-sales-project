@@ -1,17 +1,27 @@
+export const ADD_FEATURE = "ADD_FEATURE";
+export const addFeature = () => feature => {
+  console.log(feature);
+  return {
+    type: ADD_FEATURE,
+    payload: feature
+  };
+};
+
+
 export const REMOVE_FEATURE = "REMOVE_FEATURE";
 export const removeFeature = () => feature => {
-  // dispatch an action here to remove an item
+    console.log(feature)
   return {
     type: REMOVE_FEATURE,
-    payload: payload
+    payload: feature
   };
 };
 
 export const BUY_ITEM = "BUY_ITEM";
 export const buyItem = () => item => {
-  // dispatch an action here to add an item
+    console.log(item);
   return {
     type: BUY_ITEM,
-    payload: payload
+    payload: item
   };
 };
