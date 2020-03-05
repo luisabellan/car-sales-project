@@ -36,13 +36,8 @@ Follow these steps for completing your project.
 
 - [*] Submit a Pull-Request to merge Branch into master (student's Repository).
 - [*] Add your team lead as a reviewer on the pull-request
-<<<<<<< HEAD
-- [*] Your team lead will count the project as complete by merging the branch back into master.
-- [*] Do your magic!
-=======
 - [ ] Your team lead will count the project as complete by merging the branch back into master.
 - [ ] Do your magic!
->>>>>>> d6be603a5679d8397680968ccb004cdc820942c6
 
 # _Project - Car Sales_
 
