@@ -7,10 +7,10 @@ import AdditionalFeature from './AdditionalFeature';
 const AdditionalFeatures = props => {
   console.log(props)
   return (
-    <div className="content">
+    <div className="content ">
       <h4>Additional Features</h4>
       {props.additionalFeatures.length ? (
-        <ol type="1">
+        <ol type="1" className="tile is-vertical">
           {props.additionalFeatures.map(item => (
             <AdditionalFeature key={Date.now() * Math.random()} addFeature={props.addFeature} buyItem={props.buyItem} feature={item} />
             
