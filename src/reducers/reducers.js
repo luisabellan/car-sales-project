@@ -36,14 +36,27 @@ export const reducers = (state = initialState, action) => {
             }
 
         case 'REMOVE_FEATURE':
-            return{
+            return {
                 ...state,
                 car: {
                     ...state.car,
                     feature: state.car.features.pop(action.payload)
                 }
 
-            }    
+            }  
+        case 'BUY_ITEM':
+            return {
+                ...state,
+                additionalPrice: state.additionalPrice + action.payload
+
+            }     
+
+        case 'CANCEL_ITEM':
+            return {
+                ...state,
+                additionalPrice: state.additionalPrice - action.payload
+
+            }       
 
         default:
             return state
