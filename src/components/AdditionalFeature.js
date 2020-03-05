@@ -4,10 +4,7 @@ import { addFeature } from '../actions'
 
 const AdditionalFeature = props => {
 console.log(props)
- /*  const addFeature = feature => {
-   // e.preventDefault()
-    props.addFeature(props.feature)
-  } */
+
 
   return (
     <li>
@@ -22,7 +19,8 @@ console.log(props)
   );
 };
 
-/* const mapStateToProps = state => {
+/* TODO> delete not needed
+const mapStateToProps = state => {
   return {
     /* TODO fix this 
  
