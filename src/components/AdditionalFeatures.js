@@ -12,7 +12,7 @@ const AdditionalFeatures = props => {
       {props.additionalFeatures.length ? (
         <ol type="1">
           {props.additionalFeatures.map(item => (
-            <AdditionalFeature key={item.id} addFeature={props.addFeature} feature={item} />
+            <AdditionalFeature key={Date.now() * Math.random()} addFeature={props.addFeature} feature={item} />
             
             
           ))}

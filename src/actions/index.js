@@ -1,6 +1,6 @@
 export const ADD_FEATURE = "ADD_FEATURE"; // Action type
 export const addFeature = feature => { // Action creator
-  console.log(feature);
+  console.log("Feature added:",feature);
   return { // Action
     type: ADD_FEATURE,
     payload: feature
@@ -10,7 +10,8 @@ export const addFeature = feature => { // Action creator
 
 export const REMOVE_FEATURE = "REMOVE_FEATURE";
 export const removeFeature = feature => {
-    console.log(feature)
+  console.log("Feature removed:",feature);
+
   return {
     type: REMOVE_FEATURE,
     payload: feature
