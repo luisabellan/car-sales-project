@@ -27,8 +27,12 @@ export const reducers = (state = initialState, action) => {
         case 'ADD_FEATURE':
             return {
                /* fix this */
-               ...state,
-                features: [...state.car.features, action.payload]
+               
+                ...state,
+                car: {
+                    ...state.car, 
+                    features: [...state.car.features, action.payload]
+                },
             }
 
         default:

@@ -16,7 +16,7 @@ import Total from './components/Total';
 const App = (props) => {
 
   
-  const addFeature = feature => {
+/*   const addFeature = feature => {
     // dispatch an action here to remove an item
   };
   const removeFeature = feature => {
@@ -25,7 +25,7 @@ const App = (props) => {
 
   const buyItem = item => {
     // dispatch an action here to add an item
-  };
+  }; */
 
   return (
     <div className="boxes">

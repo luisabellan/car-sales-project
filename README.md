@@ -30,12 +30,12 @@ This project was put together using create-react-app (CRA). You will not need to
 - [* ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
 - [* ] Create a new branch: git checkout -b `<firstName-lastName>`.
       Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [* ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge Branch into master (student's Repository).
-- [ ] Add your team lead as a reviewer on the pull-request
+- [* ] Submit a Pull-Request to merge Branch into master (student's Repository).
+- [* ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete by merging the branch back into master.
 - [ ] Do your magic!
 
