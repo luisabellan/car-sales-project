@@ -34,7 +34,7 @@ body {
     }
   }
 }
-.button {
+/* .button {
   background: hotpink;
   border: 1px solid transparent;
   color: white;
@@ -46,4 +46,11 @@ body {
     border: 1px solid hotpink;
     color: #333;
   }
+} */
+.button {
+  margin-right: 2rem;
+
+}
+.button-text{
+  margin-right: 0.5rem;
 }

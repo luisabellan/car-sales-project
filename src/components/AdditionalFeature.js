@@ -1,4 +1,6 @@
 import React from 'react';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const AdditionalFeature = props => {
   console.log(props)
@@ -14,9 +16,12 @@ const AdditionalFeature = props => {
         }
         }
 
-        className="button"
+        className="button is-primary"
       >
-        Add
+        <span className="button-text">Add</span>
+        <span className="icon is-small">
+        <FontAwesomeIcon icon={faCheckCircle} />
+        </span>
       </button>
       {props.feature.name} (+ ${props.feature.price})</li>
   );
