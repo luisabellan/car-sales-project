@@ -1,4 +1,3 @@
-import { ADD_FEATURE } from "../actions"
 
 export const initialState = {
 
@@ -22,11 +21,12 @@ export const initialState = {
     }
 }
 
+// 1> Representation of changes in state here
+
 export const reducers = (state = initialState, action) => {
     switch (action.type) {
         case 'ADD_FEATURE':
             return {
-               /* fix this */
                
                 ...state,
                 car: {
@@ -34,6 +34,29 @@ export const reducers = (state = initialState, action) => {
                     features: [...state.car.features, action.payload]
                 },
             }
+
+        case 'REMOVE_FEATURE':
+            return {
+                ...state,
+                car: {
+                    ...state.car,
+                    feature: state.car.features.pop(action.payload)
+                }
+
+            }  
+        case 'BUY_ITEM':
+            return {
+                ...state,
+                additionalPrice: state.additionalPrice + action.payload
+
+            }     
+
+        case 'CANCEL_ITEM':
+            return {
+                ...state,
+                additionalPrice: state.additionalPrice - action.payload
+
+            }       
 
         default:
             return state
