@@ -1,4 +1,4 @@
-# Module Project: Redux - Car Sales
+# Car Sales
 
 Deployed here: https://car-sales-brown.now.sh 
 
